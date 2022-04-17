@@ -16,8 +16,9 @@ class BooksController extends Controller
     public function index()
     {
         //
-        $books = BooksModel::all();
-        return view('/verticalnav1.bookslist')->with('books', $books);
+        // $books = BooksModel::all();
+        // return view('/verticalnav1.bookslist')->with('books', $books);
+        // return view('/verticalnav1.bookslist');
     }
 
     /**
@@ -39,14 +40,14 @@ class BooksController extends Controller
     public function store(Request $request)
     {
         //
-        $books = new BooksModel;
-        $books->Books_Name = $request->Books_Name;
-        $books->Authors_Name = $request->Authors_Name;
-        $books->Year = $request->Year;
-        $books->Category = $request->Category;
-        $books->Description = $request->Description;
-        $books->saved();
-        return redirect('books');
+        // $books = new BooksModel;
+        // $books->Books_Name = $request->Books_Name;
+        // $books->Authors_Name = $request->Authors_Name;
+        // $books->Year = $request->Year;
+        // $books->Category = $request->Category;
+        // $books->Description = $request->Description;
+        // $books->saved();
+        // return redirect('books');
 
     }
 
@@ -92,9 +93,9 @@ class BooksController extends Controller
      */
     public function destroy($S_NO)
     {
-        //
-        $books = BooksModel::find($S_NO);
-        $books ->delete();
-        return redirect('/books');
+//         //
+//         $books = BooksModel::find($S_NO);
+//         $books ->delete();
+//         return redirect('/books'); 
     }
 }

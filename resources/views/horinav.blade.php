@@ -77,6 +77,10 @@
             font-family: 'Grape Nuts', cursive;
 
         }
+
+        .text{
+            font-size: 19px;
+        }
     </style> 
 </head>
 <body>
@@ -95,11 +99,12 @@
            
             <div class="hidden md:flex items-center space-x-3">
                 <ul class="hidden md:flex items-center space-x-1">
-                    <li class="active py-4 px-2 text-yellow-500 border-b-4 border-yellow-500 font-semibold "><a href="/firstview">Home</a></li>
+                    <li class="active py-2 px-2 text-yellow-500 border-b-2 border-yellow-500 font-semibold "><a href="/firstview">Home</a></li>
                     {{-- <li><a href="/ourproducts">Products</a></li> --}}
                 </ul>
-                <div class="py-2 px-2 font-medium text-yellow-500 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/signup">Sign Up</a></div>
-                <div class="py-2 px-2 font-medium text-yellow-500 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/login">Log In</a></div>
+                {{-- <div class="py-2 px-2 font-medium text-yellow-500 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/signup">Sign Up</a></div>
+                <div class="py-2 px-2 font-medium text-yellow-500 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/login">Log In</a></div> --}}
+                <div class=" text py-2 px-2 font-medium text-yellow-500 mb-1 m-4 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/signup">Log out</a></div>
             </div>
         </div>
           

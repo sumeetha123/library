@@ -10,12 +10,22 @@
     <style>
         .side0{
             /* margin-top: 200px;*/
-            margin-left: 700px; 
+            padding-right: 450px;
+            padding-top: 10px; 
             /* font-family: 'Babylonica', cursive; */
             /* font-family: 'Open Sans', sans-serif; */
             /* font-family: 'Beau Rivage', cursive; */
             font-family: 'Grape Nuts', cursive;
             
+        }
+        .side1 {
+            /* margin-top: 200px;*/
+            padding-left: 110px;
+            padding-top: 80px; 
+            /* font-family: 'Babylonica', cursive; */
+            /* font-family: 'Open Sans', sans-serif; */
+            /* font-family: 'Beau Rivage', cursive; */
+            font-family: 'Grape Nuts', cursive;
         }
 
         .float1{
@@ -46,7 +56,8 @@
 
 {{-- @section('cont') --}}
     <div class="float">
-        <p class="need side0">Welcome &nbsp to &nbsp Dashboard</p>
+        <p class="need side1">Hey &nbsp; Sumi!</p>
+        <p class="need side0">Welcome &nbsp to &nbsp Dashboard &nbsp;!</p>
         {{-- <p class="text-5xl side0">Dashboard</p> --}}
     <div>
 

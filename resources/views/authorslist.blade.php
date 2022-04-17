@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Authors</title>
     {{-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -48,9 +48,9 @@
     {{-- @include('verticalnav') --}}
     
     <div class="jumbotron text-center bg-warning opacity-warning-25">
-        <h1 class="text-black">Books</h1>
+        <h1 class="text-black">Authors</h1>
         <div class="float-right">
-            <a href="" class="btn btn-success px-4 py-2 mr-4"  data-toggle="modal" data-target="#myModal" >Add Book</a>
+            <a href="{{ url('add-author')}}" class="btn btn-success px-4 py-2 mr-4">Add Authors</a>
         </div>
     </div>
 
@@ -60,8 +60,8 @@
         <div class="row">
             <div class="col-2">
                 <div class="list-group">
-                    <a href="/books" class="list-group-item list-group-item-action">Books</a>
-                    <a href="/authors" class="list-group-item list-group-item-action">Authors</a>
+                    <a href="/books" class="list-group-item list-group-item-action bg-success">Books</a>
+                    <a href="/authors" class="list-group-item list-group-item-action bg-warning">Authors</a>
                 
                   </div>
             </div>
@@ -69,9 +69,9 @@
                 <table class="table" id="myTable">
                     <thead class="thead-dark">
                         <tr>
-                            <td>S_NO</td>
-                            <td>Books_Name</td>
+                            {{-- <td>S_No</td> --}}
                             <td>Authors_Name</td>
+                            <td>Books_Name</td>
                             <td>Year</td>
                             <td>Category</td>
                             <td>Description</td>
@@ -82,6 +82,24 @@
                             
                         </tr>
                     </thead>
+                    <tbody>
+                        @foreach($authors as $author)
+                        <tr>
+                            <td>{{$author->Authors_Name }}</td>
+                            <td>{{$author->Books_Name }}</td>
+                            <td>{{$author->Year}}</td>
+                            <td>{{$author->Category}}</td>
+                            <td>{{$author->Description}}</td>
+                            <td>
+                                {{-- <a href="/books/{{$author->S_No}}" class="btn btn-success">View</a> --}}
+                                <a href="/edit-author/{{$author->S_No}}" class="btn btn-success">Edit</a></td>
+                                <td><a href="/delete-Author/{{$author->S_No}}" class="btn btn-danger">Delete</a>
+
+                            </td>
+                        @endforeach
+                        </tr> 
+                        
+                    </tbody> 
                     {{-- <tbody> --}}
                         {{-- @foreach($books as $b)
                         <tr>
@@ -112,7 +130,7 @@
 
 
     <!-- The Modal -->
-    <div class="modal" id="myModal">
+    {{-- <div class="modal" id="myModal">
         <div class="modal-dialog">
         <div class="modal-content">
     
@@ -148,7 +166,7 @@
                     </div>
                     <div class="form-group">
                         
-                        <input type="submit" id='submit' value="Add Book" class='form-control btn btn-success'>
+                        <input type="submit" id='submit' value="Add Authors" class='form-control btn btn-success'>
                     </div>
                     
                     
@@ -183,7 +201,7 @@
 
         })
 
-        </script>
+        </script> --}}
 
 
         {{-- $(document).ready(function() {
