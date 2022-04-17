@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit Books</title>
+    <title>Edit Newspapers</title>
     {{-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -21,38 +21,38 @@
                     <div class="col-md-6 offset-md-3">
                         <div class="card">
                             <div class="card-header">
-                            Edit Magazines
+                            Edit Newspapers
                             </div>
                             <div class="card-body">
                             
                             </div>
                             
-                            <form method="POST" action="{{route('Magazine.update')}}">
+                            <form method="POST" action="{{route('Newspaper.update')}}">
                                 @csrf
                                     <div class="form-group">
                                         <label for="Name">Name</label>
-                                        <input type="text" name="Name" class="form-control" value="{{$magazine->Name}}" placeholder="Enter book title"/>
+                                        <input type="text" name="Name" class="form-control" value="{{$newspaper->Name}}" placeholder="Enter book title"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Magazines_Name">Magazines Name</label>
-                                        <input type="text" name="Magazines_Name" value="{{$magazine->Magazines_Name}}" placeholder="Enter Author title"/>
+                                        <label for="Newspaper_Name">Newspaper Name</label>
+                                        <input type="text" name="Newspaper_Name" value="{{$newspaper->Newspaper_Name}}" placeholder="Enter Author title"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Magazines_Id">Magazines Id</label>
-                                        <input type="text" name="Magazines_Id" value="{{$magazine->Magazines_Id}}" placeholder="Enter Author title"/>
+                                        <label for="Magazines_Id">Reg Id</label>
+                                        <input type="text" name="Reg_Id" value="{{$newspaper->Reg_Id}}" placeholder="Enter Author title"/>
                                     </div>
 
 
                                     <div class="form-group">
                                         <label for="Date">Date</label>
-                                        <input type="Date" name="Date" value="{{$magazine->Date}}" placeholder="Enter Year"/>
+                                        <input type="Date" name="Date" value="{{$newspaper->Date}}" placeholder="Enter Year"/>
                                     </div>
                                     <div class="form-group">
                                         <label for="Category">Category</label>
-                                        <input type="text" name="Category" value="{{$magazine->Category}}" placeholder="Enter Category"/>
+                                        <input type="text" name="Category" value="{{$newspaper->Category}}" placeholder="Enter Category"/>
                                     </div>
                                     
-                                    <input type="hidden" name="S_No" value="{{$magazine->S_No}}">
+                                    <input type="hidden" name="S_No" value="{{$newspaper->S_No}}">
                                     <input type="submit" class="btn btn-success" value="submit" />
                          
                             </form>

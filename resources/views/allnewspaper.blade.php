@@ -50,7 +50,7 @@
     <div class="jumbotron text-center bg-warning opacity-warning-25">
         <h1 class="text-black">Newspapers</h1>
         <div class="float-right">
-            <a href="{{url('add-newspapers')}}" class="btn btn-success px-4 py-2 mr-4">Add Newspaper</a>
+            <a href="{{url('add-newspaper')}}" class="btn btn-success px-4 py-2 mr-4">Add Newspaper</a>
         </div>
     </div>
 
@@ -84,27 +84,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @foreach($books as $b)
-                        <tr>
-                            <td>{{$b->S_NO}}</td>
-                            <td>{{$b->Books_Name}}</td>
-                            <td>{{$b->Authors_Name}}</td>
-                            <td>{{$b->Year}}</td>
-                            <td>{{$b->Category}}</td>
-                            <td>{{$b->Description}}</td>
-                
-                            <td><a href="javascript:void(0)" class='btn btn-warning showEditModal'>Edit</a></td>
-                            
-                            <td><form action="books/{{$b->S_NO}}" method="POST">
-                                @method('DELETE')
-                                @csrf
-                                <input type="submit" value="Delete" class="btn btn-danger">
-                            </form></td> --}}
-                
-{{--                             
-                        </tr>
-                        @endforeach
-                    </tbody> --}}
+                        
                     @foreach($newspapers as $newspaper)
                        <tr>
                            <td>{{$newspaper->Name }}</td>

@@ -55,7 +55,7 @@ Route::get('/hey', function(){
 // Route::view('/layout', 'layout');
 
 Route::view('/myhome1', 'home');
-Route::view('/signup', 'signup');
+// Route::view('/signup', 'signup');
 // Route::view('/login', 'login');
 
 
@@ -70,15 +70,10 @@ Route::view('/newspapers', 'verticalnav1.newspaper');
 
 Route::view('/firstview', 'firstview');
 
-Route::get('/foo', [SignupController::class, 'index'])->name('foo');
-Route::get('/dashboard', function(){
-    return view('verticalnav1.dashboard');
-});
-
-
-// Route::resource('course', 'CourseController');
-// Route::resource('books', 'BooksController');
-
+// Route::get('/foo', [SignupController::class, 'index'])->name('foo');
+// Route::get('/dashboard', function(){
+//     return view('verticalnav1.dashboard');
+// });
 
 
 // Route::get('/books', [BooksController::class, 'index']);
@@ -89,16 +84,10 @@ Route::get('/dashboard', function(){
 Route::post("login", [loginController::class, 'getData']);
 Route::view('login', 'login');
 
-Route::get("signup", [SignupController::class, 'getData']);
-Route::view('signup', 'signup');
+// Route::get("signup", [SignupController::class, 'getData']);
+Route::view('/signup', 'signup');
 
-// Route::get('/login', function () {
-//     if (session()->has('user')) {
-//         return redirect('profile');
-//     }
-//     return view('user-form',["title"=>"Login"]);
-// });
-// Route::post('/login', [LoginController::class, "login"]); 
+
 
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -152,13 +141,16 @@ Route::get('/delete-magazines/{S_No}', [AllmagazinesController::class, 'deleteMa
 /*-------------------------------------------------------------------------------------------------*/
 
 Route::get('/newspapers', [AllnewspapersController::class, 'getAllNewspaper'])->name('newspaper.getAllnewspaper');
-// Route::get('/add-newspapers', [AllnewspapersController::class, 'addNewspaper']);
-// Route::post('/add-newspapers', [AllnewspapersController::class, 'addNewspaperSubmit']);
+Route::get('/add-newspaper', [AllnewspapersController::class, 'addNewspaper']);
+Route::post('/add-newspaper', [AllnewspapersController::class, 'addNewspaperSubmit']);
 
 
-// //edit function
-// Route::get('/edit-newspaer/{S_No}', [AllnewspapersController::class, 'getNewspaperByS_No'])->name('Newspaper.edit');
-// Route::post('/update-newspaper', [AllnewspapersController::class, 'UpdateNewspaper'])->name('Newspaper.update');
+//edit function
+Route::get('/edit-newspaper/{S_No}', [AllnewspapersController::class, 'getNewspaperByS_No'])->name('Newspaper.edit');
+Route::post('/update-newspaper', [AllnewspapersController::class, 'UpdateNewspaper'])->name('Newspaper.update');
+
+//delete function
+Route::get('/delete-newspaper/{S_No}', [AllnewspapersController::class, 'deleteNewspapers'])->name('Newspaper.delete');
 
 
 

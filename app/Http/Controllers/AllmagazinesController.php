@@ -9,12 +9,13 @@ use Illuminate\Support\Facades\DB;
 class AllmagazinesController extends Controller
 {
     //
-    public function getAllMagazine()
+    public function getAllMagazine() 
     {
         $magazines = DB::table('magazines')->get();
         return view('allmagazines', compact('magazines'));
     }
 
+    //adding data
     public function addMagazine()
     {
         return view('add-magazines');

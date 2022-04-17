@@ -56,6 +56,15 @@
             <p class="need side1">Hey &nbsp; </p>
             <p class="need side0">This  &nbsp is &nbsp About &nbsp  Page</p>
             {{-- <p class="text-5xl side0">Dashboard</p> --}}
+            <div class="card" style="width: 35rem; margin-top: 10px;">
+                <div class="card-body bg-warning bg-opacity-3">
+                  <h5 class="card-title pt-2 pb-2">Library-Management-System</h5>
+                  <h6 class="card-subtitle mb-2 text-muted ">Your Online Library</h6>
+                  <p class="card-text pt-2">A library management system is a piece of software that keeps track of the library’s records. Library Management Systems (LMS) is software that assists in the maintenance of a database that is used to enter new books and track papers and magazines borrowed by members, as well as their dates.</p>
+                  {{-- <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a> --}}
+                </div>
+              </div>
         <div>
            
 {{-- @endsection --}}
