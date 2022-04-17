@@ -64,13 +64,13 @@
         <div class="row">
             <div class="col-2">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action bg-success black">Books</a>
-                    <a href="authors" class="list-group-item list-group-item-action bg-warning">Authors</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-success text-white">Books</a>
+                    <a href="authors" class="list-group-item list-group-item-action bg-warning text-dark">Authors</a>
                   </div>
             </div> 
             <div class="col-10"> 
                 <table class="table" id="myTable">
-                    <thead class="thead-dark">
+                    <thead class="thead-dark" style="font-weight: 20px;">
                         <tr>
                             {{-- <td>S_No</td> --}}
                             <td>Books_Name</td>

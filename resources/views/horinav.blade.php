@@ -104,7 +104,7 @@
                 </ul>
                 {{-- <div class="py-2 px-2 font-medium text-yellow-500 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/signup">Sign Up</a></div>
                 <div class="py-2 px-2 font-medium text-yellow-500 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/login">Log In</a></div> --}}
-                <div class=" text py-2 px-2 font-medium text-yellow-500 mb-1 m-4 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="/signup">Log out</a></div>
+                <div class=" text py-2 px-2 font-medium text-yellow-500 mb-1 m-4 rounded hover:bg-yellow-600 hover:text-white transition duration-300"><a href="login">Log out</a></div>
             </div>
         </div>
           

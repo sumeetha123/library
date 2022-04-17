@@ -16,12 +16,12 @@
 </head>
 <body>
     <section>
-            <div class="container">
+            <div class="container" style="margin-top: 80px;">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="card">
-                            <div class="card-header">
-                            Add New Post
+                        <div class="card bg-warning text-dark fw-bold">
+                            <div class="card-header ">
+                            Add New Book
                             </div>
 
                             <div class="card-body">
@@ -30,27 +30,27 @@
                                 {{-- <form method="POST" action="{{route('book.addsubmit')}}"> --}}
                                     <form method="POST">
                                     @csrf
-                                    <div class="form-group">
+                                    <div class="form-group rounded">
                                         <label for="Books_Name">Book Title</label>
                                         <input type="text" name="Books_Name" class="form-control" placeholder="Enter book title"/>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="Authors_Name">Authors Name</label>
+                                    <div class="form-group rounded">
+                                        <label for="Authors_Name">Authors Name</label><br>
                                         <input type="text" name="Authors_Name" placeholder="Enter Author title"/>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="Year">Year</label>
+                                    <div class="form-group rounded">
+                                        <label for="Year">Year</label><br>
                                         <input type="text" name="Year" placeholder="Enter Year"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Category">Category</label>
+                                        <label for="Category">Category</label><br>
                                         <input type="text" name="Category" placeholder="Enter Category"/>
                                     </div>
                                     <div class="form-group">
                                         <label for="Description">Description</label>
                                         <textarea  name="Description" placeholder="Enter description" rows="3" class="form-control"></textarea>
                                     </div>
-                                    <input type="submit" class="btn btn-success" value="submit" />
+                                    <input type="submit" class="btn btn-success" value="submit" style="margin-left: 210px;" />
                                 </form>
                             
                             </div>

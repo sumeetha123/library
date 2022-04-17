@@ -16,11 +16,11 @@
 </head>
 <body>
     <section>
-            <div class="container">
+            <div class="container" style="margin-top: 80px;">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="card">
-                            <div class="card-header">
+                        <div class="card bg-warning text-dark fw-bold">
+                            <div class="card-header ">
                             Add New Magazine
                             </div>
 
@@ -36,24 +36,24 @@
                                     </div>
                                     
                                     <div class="form-group">
-                                        <label for="Magazines_Name">Magazines_Name</label>
+                                        <label for="Magazines_Name">Magazines_Name</label><br>
                                         <input type="text" name="Magazines_Name" placeholder="Enter Magazines_Name"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Magazines_Id">Magazines_Id</label>
+                                        <label for="Magazines_Id">Magazines_Id</label><br>
                                         <input type="text" name="Magazines_Id" placeholder="Enter Magazines_Id"/>
                                     </div>
                                     
                                     <div class="form-group">
-                                        <label for="Date">Date</label>
+                                        <label for="Date">Date</label><br>
                                         <input type="Date" name="Date" placeholder="Date"/>
                                         
                                     </div>
                                     <div class="form-group">
-                                        <label for="Category">Category</label>
+                                        <label for="Category">Category</label><br>
                                         <input type="text" name="Category" placeholder="Enter Category"/>
                                     </div>
-                                    <input type="submit" class="btn btn-success" value="submit" />
+                                    <input type="submit" class="btn btn-success" value="submit" style="margin-left: 210px;" />
                                 </form>
                             
                             </div>

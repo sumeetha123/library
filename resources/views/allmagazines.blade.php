@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-2">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action bg-success">Magazines</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-success text-white">Magazines</a>
                     <a href="newspapers" class="list-group-item list-group-item-action bg-warning">Newspapers</a>
                 
                   </div>

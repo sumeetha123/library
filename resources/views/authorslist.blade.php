@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-2">
                 <div class="list-group">
-                    <a href="/books" class="list-group-item list-group-item-action bg-success">Books</a>
+                    <a href="/books" class="list-group-item list-group-item-action bg-success text-white">Books</a>
                     <a href="/authors" class="list-group-item list-group-item-action bg-warning">Authors</a>
                 
                   </div>
