@@ -16,10 +16,10 @@
 </head>
 <body>
     <section>
-            <div class="container">
+            <div class="container" style="margin-top: 70px;">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="card">
+                        <div class="card bg-warning text-dark fw-bold pb-3 pl-3 pr-3">
                             <div class="card-header">
                             Edit Magazines
                             </div>
@@ -31,29 +31,29 @@
                                 @csrf
                                     <div class="form-group">
                                         <label for="Name">Name</label>
-                                        <input type="text" name="Name" class="form-control" value="{{$magazine->Name}}" placeholder="Enter book title"/>
+                                        <input type="text" name="Name" class="form-control" value="{{$magazine->Name}}" placeholder="Enter Name"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Magazines_Name">Magazines Name</label>
-                                        <input type="text" name="Magazines_Name" value="{{$magazine->Magazines_Name}}" placeholder="Enter Author title"/>
+                                        <label for="Magazines_Name">Magazines Name</label><br>
+                                        <input type="text" name="Magazines_Name" value="{{$magazine->Magazines_Name}}" placeholder="Enter Magazine Name"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Magazines_Id">Magazines Id</label>
-                                        <input type="text" name="Magazines_Id" value="{{$magazine->Magazines_Id}}" placeholder="Enter Author title"/>
+                                        <label for="Magazines_Id">Magazines Id</label><br>
+                                        <input type="text" name="Magazines_Id" value="{{$magazine->Magazines_Id}}" placeholder="Enter Magazines Id"/>
                                     </div>
 
 
                                     <div class="form-group">
-                                        <label for="Date">Date</label>
-                                        <input type="Date" name="Date" value="{{$magazine->Date}}" placeholder="Enter Year"/>
+                                        <label for="Date">Date</label><br>
+                                        <input type="Date" name="Date" value="{{$magazine->Date}}" placeholder="Enter Date"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Category">Category</label>
+                                        <label for="Category">Category</label><br>
                                         <input type="text" name="Category" value="{{$magazine->Category}}" placeholder="Enter Category"/>
                                     </div>
                                     
                                     <input type="hidden" name="S_No" value="{{$magazine->S_No}}">
-                                    <input type="submit" class="btn btn-success" value="submit" />
+                                    <input type="submit" class="btn btn-success" value="submit" style="margin-left: 210px;"  />
                          
                             </form>
                             

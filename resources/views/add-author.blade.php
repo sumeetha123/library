@@ -19,7 +19,7 @@
             <div class="container" style="margin-top: 80px;">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="card bg-warning text-dark fw-bold"">
+                        <div class="card bg-warning text-dark fw-bold">
                             <div class="card-header">
                             Add New Author
                             </div>

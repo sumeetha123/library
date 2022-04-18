@@ -16,10 +16,10 @@
 </head>
 <body>
     <section>
-            <div class="container">
+            <div class="container" style="margin-top: 70px;">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="card">
+                        <div class="card bg-warning text-dark fw-bold pb-3 pl-3 pr-3">
                             <div class="card-header">
                             Edit Book
                             </div>
@@ -30,27 +30,27 @@
                             <form method="POST" action="{{route('book.update')}}">
                                 @csrf
                                     <div class="form-group">
-                                        <label for="Books_Name">Book Title</label>
+                                        <label for="Books_Name">Book Title</label><br>
                                         <input type="text" name="Books_Name" class="form-control" value="{{$book->Books_Name}}" placeholder="Enter book title"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Authors_Name">Authors Name</label>
+                                        <label for="Authors_Name">Authors Name</label><br>
                                         <input type="text" name="Authors_Name" value="{{$book->Authors_Name}}" placeholder="Enter Author title"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Year">Year</label>
+                                        <label for="Year">Year</label><br>
                                         <input type="text" name="Year" value="{{$book->Year}}" placeholder="Enter Year"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Category">Category</label>
+                                        <label for="Category">Category</label><br>
                                         <input type="text" name="Category" value="{{$book->Category}}" placeholder="Enter Category"/>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Description">Description</label>
+                                        <label for="Description">Description</label><br>
                                         <textarea  name="Description" placeholder="Enter description" rows="3" class="form-control">{{$book->Description}}</textarea>
                                     </div>
                                     <input type="hidden" name="S_No" value="{{$book->S_No}}">
-                                    <input type="submit" class="btn btn-success" value="submit" />
+                                    <input type="submit" class="btn btn-success" value="submit"  style="margin-left: 210px;" />
                          
                             </form>
                             

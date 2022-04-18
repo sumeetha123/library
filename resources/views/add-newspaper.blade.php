@@ -32,7 +32,7 @@
                                     @csrf
                                     <div class="form-group"><br>
                                         <label for="Name">Name</label>
-                                        <input type="text" name="Name" class="form-control" placeholder="Enter name title"/>
+                                        <input type="text" name="Name" class="form-control" placeholder="Enter name"/>
                                     </div>
                                     
                                     <div class="form-group">
